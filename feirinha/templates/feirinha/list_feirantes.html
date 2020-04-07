@@ -1,0 +1,17 @@
+<div>
+    <h1><a href="/">Django Feirinha Blog</a></h1>
+</div>
+
+{% for feirante in feirantes %}
+	<p>{{ feirante.nome }}</p>
+	{% for produto in produtos %}
+		{% if feirante.nome == produto.feirante.nome %}
+		    <div>
+		        <p>{{ produto.nome }}</p>
+		    </div>
+		{% endif %}
+	{% endfor %}
+	<br>
+	<br>
+	<br>
+{% endfor %}
