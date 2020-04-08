@@ -1,17 +1,42 @@
-<div>
-    <h1><a href="/">Django Feirinha Blog</a></h1>
-</div>
+{% load static %}
 
-{% for feirante in feirantes %}
-	<p>{{ feirante.nome }}</p>
-	{% for produto in produtos %}
-		{% if feirante.nome == produto.feirante.nome %}
-		    <div>
-		        <p>{{ produto.nome }}</p>
-		    </div>
-		{% endif %}
-	{% endfor %}
-	<br>
-	<br>
-	<br>
-{% endfor %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feirinha de Corrente - Online</title>
+	<link rel="stylesheet" href="{% static 'css/feirinha.css' %}">
+</head>
+	<body>
+		<div>
+		    <h1><a href="/">Django Feirinha Corrente</a></h1>
+		</div>	  	
+		{% for feirante in feirantes %}
+			<p>{{ feirante.nome }}</p>
+
+			<table>
+			  <tr>
+			    <th>Produto</th>
+			    <th>Unidade</th>
+			    <th>Valor</th>
+			  </tr>
+
+			{% for produto in produtos %}
+				{% if feirante.nome == produto.feirante.nome %}
+				    <tr>
+				    	<td>{{ produto.nome }}</td>
+				    	<td>{{ produto.unidade.tipo }}</td>
+				    	<td>R$ - {{ produto.valor }}</td>    
+				    </tr>
+				{% endif %}
+			{% endfor %}
+			</table>
+			<p><b>Dia/Horário de funcionamento: </b>{{feirante.horario_funcionamento}}</p>
+			<p><b>Taxa de Entrega: </b>{{feirante.taxa_entrega}}</p>
+			<p><b>Telefone: </b>{{feirante.telefone}}</p>
+			<br>
+			<br>
+		{% endfor %}
+
+	</body>
+</html>
