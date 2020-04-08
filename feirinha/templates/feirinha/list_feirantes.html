@@ -12,7 +12,7 @@
 		    <h1><a href="/">Django Feirinha Corrente</a></h1>
 		</div>	  	
 		{% for feirante in feirantes %}
-			<p>{{ feirante.nome }}</p>
+			<p><h2>{{ feirante.nome }}</h2></p>
 
 			<table>
 			  <tr>
@@ -31,9 +31,14 @@
 				{% endif %}
 			{% endfor %}
 			</table>
-			<p><b>Dia/Horário de funcionamento: </b>{{feirante.horario_funcionamento}}</p>
-			<p><b>Taxa de Entrega: </b>{{feirante.taxa_entrega}}</p>
-			<p><b>Telefone: </b>{{feirante.telefone}}</p>
+			<p>
+				<b>Dia/Horário de Funcionamento: </b>{{feirante.horario_funcionamento}}
+			</p>
+			<p>
+				<b>Taxa de Entrega: </b>{{feirante.taxa_entrega}}
+			<p>
+				<b>Telefone: </b>{{feirante.telefone}}
+			</p>
 			<br>
 			<br>
 		{% endfor %}
