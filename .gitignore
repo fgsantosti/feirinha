@@ -99,3 +99,10 @@ staticfiles/
 bin/
 lib/
 include/
+
+*.pyc
+*-
+__pycache__
+myenv
+db.sqlite3
+.DS_Store
