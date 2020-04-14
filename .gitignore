@@ -75,7 +75,7 @@ target/
 celerybeat-schedule
 
 # Environments
-.env
+# .env
 .venv
 .gfevent
 .gfevent/
