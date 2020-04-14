@@ -26,7 +26,6 @@
 @import url(bootsnav.css);
 @import url(owl.carousel.min.css);
 @import url(jquery-ui.css);
-@import url(nice-select.css);
 @import url(baguetteBox.min.css);
 
 /*------------------------------------------------------------------
@@ -56,33 +55,33 @@
      font-weight: normal;
      line-height: 120% !important;
      color: #1f1f1f;
-     margin: 0 
+     margin: 0
 }
  h1 {
-     font-size: 24px 
+     font-size: 24px
 }
  h2 {
-     font-size: 22px 
+     font-size: 22px
 }
  h3 {
-     font-size: 18px 
+     font-size: 18px
 }
  h4 {
-     font-size: 16px 
+     font-size: 16px
 }
  h5 {
-     font-size: 14px 
+     font-size: 14px
 }
  h6 {
-     font-size: 13px 
+     font-size: 13px
 }
  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
      color: #212121;
      text-decoration: none!important;
-     opacity: 1 
+     opacity: 1
 }
  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-     opacity: .8 
+     opacity: .8
 }
  a {
      color: #1f1f1f;
@@ -139,7 +138,7 @@
      opacity: 1;
 }
  .bootstrap-select .dropdown-toggle:focus{
-     box-shadow: none !important 
+     box-shadow: none !important
 }
 /*------------------------------------------------------------------ LOADER -------------------------------------------------------------------*/
  #back-to-top {
@@ -611,7 +610,7 @@
 }
 
  nav.navbar.bootsnav ul.navbar-nav li.dropdown ul.dropdown-menu li a:hover{
-	 
+
  }
  nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
      left: auto;
@@ -1322,11 +1321,11 @@
 	top: 10px;
 	font-size: 20px;
 }
-.newsletter-box button{	
+.newsletter-box button{
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 500;
-	
+
 }
  .footer-top-box p{
 	 padding-bottom: 15px;
@@ -1701,7 +1700,7 @@
      opacity: 0.9;
      position: relative;
      transform: translate(35px, -35px);
-     transition: all 0.3s ease-in-out 0s 
+     transition: all 0.3s ease-in-out 0s
 }
  .our-team .social li a:hover{
      width: 35px;
@@ -1741,7 +1740,7 @@
      transition-delay: 0.0s;
 }
  .hover-team:hover .social li a{
-     transform: translate(0, 0) 
+     transform: translate(0, 0)
 }
  .hover-team:hover img{
      opacity: 0.5;
@@ -2589,7 +2588,7 @@
      vertical-align: middle;
      white-space: nowrap;
 }
- 
+
 .card-outline-secondary .card-body a{
 	color: #ffffff;
 	font-size: 18px;
@@ -2597,24 +2596,3 @@
 	padding: 12px 25px;
 	border: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
