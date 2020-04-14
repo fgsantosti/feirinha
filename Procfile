@@ -1,1 +1,1 @@
-web: gunicorn feirinha.wsgi
+web: gunicorn feirinha.wsgi --log-file -
