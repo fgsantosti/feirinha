@@ -34,13 +34,13 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="custom-select-box">
+					{% comment %} <div class="custom-select-box">
                         <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
 							<option>¥ JPY</option>
 							<option>$ USD</option>
 							<option>€ EUR</option>
 						</select>
-                    </div>
+                    </div> {% endcomment %}
                     <div class="right-phone-box">
                         <p>Ligue: <a href="#"> +55 (89) 9 9917-5653</a></p>
                     </div>
@@ -180,11 +180,12 @@
         <!-- End Navigation -->
     </header>
     <!-- End Main Top -->
-
+    
 	<!-- Start List Products -->
+    <section id="list">
 		<div class="title-all text-center">
 			<br>
-			<h1> <a href="/">Django Feirinha Corrente</a></h1>
+			<h1> <a href="/">Feirinha de Corrente</a></h1>
 			<p>Feirantes da Região e Seus Produtos.</p>
 		</div>	  	
 		
@@ -223,7 +224,7 @@
 		</div>
 
 		{% endfor %}
-
+    </section>
 
 	<!-- Start Footer  -->
     <footer>
@@ -232,13 +233,14 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-12 col-sm-12">
 						<div class="footer-top-box">
-							<h3>Business Time</h3>
+							<h3>Negócios Abertos</h3>
 							<ul class="list-time">
-								<li>Monday - Friday: 08.00am to 05.00pm</li> <li>Saturday: 10.00am to 08.00pm</li> <li>Sunday: <span>Closed</span></li>
+								<li>Segunda - Sábado: 07:00 hrs às 18:00 hrs</li>
+                                <li>Domingo: <span>Fechado</span></li>
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12">
+					{% comment %} <div class="col-lg-4 col-md-12 col-sm-12">
 						<div class="footer-top-box">
 							<h3>Newsletter</h3>
 							<form class="newsletter-box">
@@ -249,11 +251,11 @@
 								<button class="btn hvr-hover" type="submit">Submit</button>
 							</form>
 						</div>
-					</div>
+					</div> {% endcomment %}
 					<div class="col-lg-4 col-md-12 col-sm-12">
 						<div class="footer-top-box">
-							<h3>Social Media</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<h3>Mídias Sociais</h3>
+							<p>Acompanhe nossas redes sociais para ficar por dentro de mais informações.</p>
 							<ul>
                                 <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
@@ -270,12 +272,15 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-widget">
-                            <h4>About Freshshop</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> 							
+                            <h4>Sobre a Feirinha Online</h4>
+                            <p>A Feirinha Online é um projeto desenvolvido por alunos e professores do 
+                            Instituto Federal do Piauí - Campos Corrente (IFPI), com o intuito de promover
+                            o suprimento das necessidades dos cidadãos correntinos e região em vender e comprar 
+                            alimentos orgânicos produzidos pela agricultura familiar.</p>
+							<p></p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
+                    {% comment %} <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-link">
                             <h4>Information</h4>
                             <ul>
@@ -287,19 +292,28 @@
                                 <li><a href="#">Delivery Information</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> {% endcomment %}
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-link-contact">
-                            <h4>Contact Us</h4>
+                            <h4>Contatos</h4>
                             <ul>
                                 <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>Address: Michael I. Days 3756 <br>Preston Street Wichita,<br> KS 67213 </p>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Corrente - Piauí<br>Nova Corrente, Rua  n° 0000<br>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1-888 705 770</a></p>
+                                    <p>
+                                        <i class="fas fa-phone-square"></i>
+                                        Telefone: <a href="tel:+55 (89) 9 9999-9999">+55 (89) 9 9999-9999</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a></p>
+                                    <p>
+                                        <i class="fas fa-envelope"></i>
+                                        E-mail: <a href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a>
+                                    </p>
                                 </li>
                             </ul>
                         </div>
@@ -312,8 +326,7 @@
 
     <!-- Start copyright  -->
     <div class="footer-copyright">
-        <p class="footer-company">All Rights Reserved. &copy; 2018 <a href="#">ThewayShop</a> Design By :
-            <a href="https://html.design/">html design</a></p>
+        <p class="footer-company">&copy; 2020 Corrente. Todos os direitos reservados.</p>
     </div>
     <!-- End copyright  -->
 
